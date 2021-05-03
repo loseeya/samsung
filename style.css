@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 리셋 css */
+
+ul,
+li {
+  padding: 0%;
+  list-style: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+/* 상단 고정 부분 */
+
+.haderSection {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 81px;
+  padding: 28px 24px 28px 0px;
+  z-index: 1;
+}
+
+.haderSection li {
+  display: inline;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 3px;
+}
+
+.haderSection li:hover {
+  cursor: pointer;
+}
+
+.haderSection h1 {
+  width: 223px;
+  height: 20px;
+  font-size: 19px;
+}
+
+.util button {
+  font-size: 23px;
+  margin-bottom: 3px;
+}
+
+/* 슬라이드 섹션 */
+
+.slideSection {
+  position: relative;
+  width: 100%;
+}
+
+.slideSection .container {
+  margin: 0%;
+  padding: 0%;
+}
+
+.slide-img {
+  width: 100vw;
+  margin: 0%;
+  overflow: auto;
+}
+
+.slide-img img {
+  width: 100vw;
+  height: auto;
+}
+
+.desc {
+  position: absolute;
+  font-size: 25px;
+  top: 120px;
+  left: 60px;
+}
+
+.desc-title P {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 17px 0px 33px 0px;
+}
+
+/* 슬라이드 버튼 부분 */
+
+.slide-btn i {
+  font-size: 23px;
+  color: white;
+}
+
+.slide-prev-btn,
+.slide-next-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.slide-prev-btn:hover,
+.slide-next-btn:hover {
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
+.slide-prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.slide-next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+
+/* 제품검색 */
+
+.productSearchSection {
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.main-search h2 {
+  font-size: 34px;
+  margin: 73px 0px 21px;
+}
+
+#search-input {
+  display: block;
+  padding: auto;
+  margin: auto;
+  width: 872px;
+  height: 52px;
+  font-size: 16px;
+}
+
+.btn-img {
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  right: 220px;
+  top: 83px;
+}
+
+.product-search-tag {
+  margin-top: 10px;
+}
+
+.product-list {
+  display: inline;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.product-list li {
+  margin: 5px 10px 0px;
+}
+
+/* 제품클릭 */
+
+.proguctClickSection {
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.product2-tag-title h2 {
+  font-size: 34px;
+  margin: 74px 0px 21px;
+}
+
+.product2-list {
+  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product2-list li {
+  width: 140px;
+  height: 140px;
+  padding-top: 45px;
+  margin: 0px 0px 45px;
+}
+
+.product2-list li a {
+  margin-bottom: 20px;
+}
+
+.product2-list li img {
+  width: 96px;
+  height: 96px;
+}
+
+.product2-list li a span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 제품 사용진단 및 안내 reset css */
+
+.service-box-list {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#service-list-title {
+  font-size: 24px;
+  margin: 20px 0px 6px 24px;
+}
+
+.service-img {
+  width: 350px;
+  height: 200px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+.service-img:first-child {
+  margin-left: 25px;
+}
+
+.service-img:hover {
+  transform: scale(1.1);
+  transition: all 300ms ease-in;
+}
+
+.service-list-desc {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+/* 제품 사용진단 및 안내 */
+
+.service-box {
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* 서비스 안내 */
+
+.serviceInformation {
+  padding: 0px 24px;
+}
+
+.information-header {
+  text-align: center;
+}
+
+.information-header h2 {
+  font-size: 34px;
+  margin: 73px 0px 21px;
+}
+
+.lnformatiom-list li {
+  padding: 20px 0px;
+}
+
+.informaiton-title {
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* 버튼 위치 조절 */
+
+@media (min-width: 1800px) and (max-width: 1920px) {
+  .btn-img {
+    right: 540px;
+  }
+}
+/* Custom Grid System - Fix container width */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
