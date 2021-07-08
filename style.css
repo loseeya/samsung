@@ -72,11 +72,6 @@ button {
   width: 100%;
 }
 
-.slideSection .container {
-  margin: 0%;
-  padding: 0%;
-}
-
 .slide-img {
   width: 100vw;
   margin: 0%;
@@ -237,14 +232,14 @@ button {
 }
 
 .service-img {
-  width: 350px;
+  width: 300px;
   height: 200px;
-  margin-right: 25px;
+  margin-right: 10px;
   border-radius: 10px;
 }
 
 .service-img:first-child {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .service-img:hover {
@@ -253,7 +248,7 @@ button {
 }
 
 .service-list-desc {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   margin-left: 20px;
 }
@@ -267,27 +262,57 @@ button {
 
 /* 서비스 안내 */
 
-.serviceInformation {
-  padding: 0px 24px;
+.serviceGuide {
+  position: relative;
 }
 
-.information-header {
+.guide-title {
+  padding: auto;
   text-align: center;
-}
-
-.information-header h2 {
-  font-size: 34px;
   margin: 73px 0px 21px;
 }
 
-.lnformatiom-list li {
+.guide-title h2 {
+  font-size: 34px;
+}
+
+.guide-list {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   padding: 20px 0px;
 }
 
-.informaiton-title {
+.guide-list li {
+  width: 325px;
+  height: 188px;
+}
+
+.list-tit {
   display: inline-block;
-  font-size: 24px;
+  font-size: 34px;
   margin-bottom: 10px;
+}
+
+.guide-list a {
+  padding-right: 300px;
+}
+
+.guide-icon {
+  display: block;
+  position: absolute;
+  font-size: 70px;
+  margin-top: -0px;
+  margin-left: 180px;
+}
+
+.guide-list span {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 /* 버튼 위치 조절 */
